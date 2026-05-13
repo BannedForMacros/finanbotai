@@ -1,0 +1,57 @@
+-- Catalogo arancelario (20 partidas representativas)
+INSERT INTO intelfin.catalogo_arancelario(codigo_arancelario, descripcion_oficial) VALUES
+  ('0101210000', 'Caballos vivos reproductores de raza pura'),
+  ('0207110000', 'Carne de aves de la especie Gallus domesticus, sin trocear'),
+  ('0805100000', 'Naranjas frescas o secas'),
+  ('1006301000', 'Arroz semiblanqueado o blanqueado'),
+  ('1701140000', 'Azucar de cana en bruto'),
+  ('2106909900', 'Las demas preparaciones alimenticias'),
+  ('2208700000', 'Licores'),
+  ('3004900000', 'Medicamentos para usos terapeuticos o profilacticos'),
+  ('3917320000', 'Tubos de plastico'),
+  ('4202920000', 'Bolsos de mano con la superficie exterior de materia plastica'),
+  ('5208510000', 'Tejidos de algodon estampados'),
+  ('6109100000', 'T-shirts y camisetas de punto de algodon'),
+  ('6403990000', 'Calzado con suela de caucho y parte superior de cuero'),
+  ('7308300000', 'Puertas, ventanas y sus marcos de hierro o acero'),
+  ('8418100000', 'Combinaciones de refrigerador y congelador'),
+  ('8471300000', 'Maquinas automaticas para procesamiento de datos portatiles'),
+  ('8517120000', 'Telefonos celulares y los demas telefonos de red'),
+  ('8528720000', 'Aparatos receptores de television en colores'),
+  ('8703230000', 'Vehiculos automoviles, cilindrada 1500-3000 cm3'),
+  ('9403600000', 'Los demas muebles de madera');
+
+INSERT INTO intelfin.tasas_advalorem_intelfin(codigo_arancelario, tasa_porcentual) VALUES
+  ('0101210000',  0.00), ('0207110000', 25.00), ('0805100000', 11.00),
+  ('1006301000', 11.00), ('1701140000', 11.00), ('2106909900',  6.00),
+  ('2208700000', 11.00), ('3004900000',  0.00), ('3917320000',  6.00),
+  ('4202920000', 11.00), ('5208510000', 11.00), ('6109100000', 11.00),
+  ('6403990000', 11.00), ('7308300000',  6.00), ('8418100000',  6.00),
+  ('8471300000',  0.00), ('8517120000',  0.00), ('8528720000',  6.00),
+  ('8703230000',  6.00), ('9403600000', 11.00);
+
+-- Plan de Cuentas PCGE peruano
+INSERT INTO intelfin.plan_cuentas_pcge(codigo_cuenta, denominacion_cuenta) VALUES
+  ('12',   'Cuentas por cobrar comerciales - Terceros'),
+  ('1212', 'Emitidas en cartera'),
+  ('40',   'Tributos, contraprestaciones y aportes al sistema de pensiones y de salud por pagar'),
+  ('4011', 'Impuesto General a las Ventas'),
+  ('42',   'Cuentas por pagar comerciales - Terceros'),
+  ('4212', 'Emitidas'),
+  ('60',   'Compras'),
+  ('601',  'Mercaderias'),
+  ('602',  'Materias primas'),
+  ('603',  'Materiales auxiliares, suministros y repuestos'),
+  ('604',  'Envases y embalajes'),
+  ('62',   'Gastos de personal, directores y gerentes'),
+  ('621',  'Remuneraciones'),
+  ('627',  'Seguridad, prevision social y otras contribuciones'),
+  ('63',   'Gastos de servicios prestados por terceros'),
+  ('64',   'Gastos por tributos'),
+  ('65',   'Otros gastos de gestion'),
+  ('67',   'Gastos financieros'),
+  ('70',   'Ventas'),
+  ('7011', 'Mercaderias - Manufacturadas - Terceros'),
+  ('7012', 'Mercaderias - Manufacturadas - Exportadas'),
+  ('7021', 'Productos terminados - Manufacturados - Terceros'),
+  ('7022', 'Productos terminados - Manufacturados - Exportados');
